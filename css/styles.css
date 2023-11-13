@@ -801,7 +801,7 @@ header {
     top: 40px;
 }
 .car_kyev::before{
-    background-image: url(/images/icons_services/1_gr.png);
+    background-image: url(../images/icons_services/1_gr.png);
 }
 .car_ukraine::before{
     background-image: url(/images/icons_services/2_gr.png);
@@ -837,7 +837,7 @@ header {
 
 
 .car_kyev:hover::before{
-    background-image: url(/images/icons_services/1_bl.png);
+    background-image: url(../images/icons_services/1_bl.png);
 }
 .car_ukraine:hover::before{
     background-image: url(/images/icons_services/2_bl.png);
