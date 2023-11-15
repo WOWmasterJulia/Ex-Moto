@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.google.com/recaptcha/api.js?hl=uk" async="async" defer="defer"></script>
+    <title>ВИКЛИК КУР'ЄРА | Експрес Мото Україна</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+  </head>
+  <!-- ГЛАВНАЯ -->
+  <body>
+    
+    <!-- Шапка -->
+    <header>
+      <div class="container main-nav">
+        <nav class="nav">
+          <div class="nav-contacts">
+            <div>
+              <a href="./index.html" class="logo logo__header">
+            <img class="logo__header-img"  src="images/home/logo_1.png" alt="">
+            </a>
+
+            <select class="language-switcher">
+              <option value="ua" selected>UA</option>
+              <option value="ru" >RU</option>
+            </select>
+            </div>
+            <div class="contact-nav list">
+              <div class="number">
+                <input type="text" class="input__number" placeholder="Номер накладної" required
+                autocomplete="off">
+                <button class="button button-header" type="submit">
+                  <svg  class="icon-right-header" width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23 12H5"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 6L23 12L17 18"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="lng-menu-one">Відстежити</span>
+                </button>
+              </div>
+              <div class="phone-burger">
+                <!-- Бургер -->
+                <button
+                  class="menu-toggle menu-btn-burger js-open-menu"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu"
+                >
+                  <svg class="icon-icon-menu" width="32" height="22">
+                    <use href="./images/icons_all.svg#icon-icon-menu"></use>
+                  </svg>
+                </button>
+                <a href="tel:0800503503" class="contact-nav-link header-phone">0 <span>800</span> 503 503</a>  
+              </div>  
+            </div>
+          </div>
+          
+          <ul class="site-nav list">
+            <li class="site-nav-item">
+              <a href="./neworder.html" class="nav-link current lng-menu-two">Виклик кур'єра</a>
+            </li>
+
+            <li class="site-nav-item">
+              <div class="site-nav-menu">
+                <!-- <a href="#" class="nav-link arrow__link"> -->
+                  <span class="lng-menu-three">Послуги</span>
+                <!-- </a> -->
+                  <svg class="arrowCaretUp" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 20L16 10L26 20"   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> 
+              </div>
+              
+              <ul class="submenu list">
+                <li><a href="#">STANDART</a></li>
+                <li><a href="#">EXPRESS</a></li>
+                <li><a href="#">SUPER EXPRESS</a></li>
+                <li><a href="#" class="lng-resp-storage">Відповідальне зберігання</a></li>
+                <li><a href="#" class="lng-sort-assembly">Сортування та комплектування</a></li>
+                <li><a href="#" class="lng-fulfill">Фулфілмент</a></li>
+                <li><a href="#" class="lng-dip-mail">Дипломатична пошта</a></li>
+              </ul>
+            </li>
+
+            <li class="site-nav-item">
+              <div class="site-nav-menu">
+              <!-- <a href="#" class="nav-link arrow__link"> -->
+                <span class="lng-menu-four">Кур'єрська доставка</span>
+                <svg class="arrowCaretUp" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 20L16 10L26 20"   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <!-- </a> -->
+              </div>
+              <ul class="submenu list">
+                <li><a href="#" class="lng-inter-deliv">Міжнародна доставка</a></li>
+                <li><a href="#" class="lng-kiyv-deliv">Доставка по Києву</a></li>
+                <li><a href="#" class="lng-ukr-deliv">Доставка по Україні</a></li>
+                <li><a href="#" class="lng-adress-send">Адресна розсилка</a></li>
+                <li><a href="#" class="lng-add-service">Додаткові послуги</a></li>
+              </ul>
+            </li>
+
+            <li class="site-nav-item">
+              <div class="site-nav-menu">
+              <!-- <a href="#" class="nav-link arrow__link"> -->
+                <span class="lng-menu-five">Для клієнтів</span>
+                <svg class="arrowCaretUp" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 20L16 10L26 20"   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <!-- </a> -->
+              </div>
+              <ul class="submenu list">
+                <li><a href="#" class="lng-send-email">Надіслати лист</a></li>
+                <li><a href="#" class="lng-paym-detail">Оплата за реквізитами</a></li>
+                <li><a href="#" class="lng-quest-answ">Запитання та відповіді</a></li>
+                <li><a href="#" class="lng-our-contacts">Контакти</a></li>
+                <li><a href="#" class="lng-rules-proc">Правила та процедури</a></li>
+                <li><a href="#" class="lng-private-room">Особистий кабінет</a></li>
+              </ul>
+            </li>
+
+            <li class="site-nav-item">
+              <div class="site-nav-menu">
+              <!-- <a href="#" class="nav-link arrow__link"> -->
+                <span class="lng-menu-six">Вхід</span>
+                <svg class="arrowCaretUp" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 20L16 10L26 20"   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <!-- </a> -->
+              </div>
+              <ul class="submenu list">
+                <li><a href="#">В мене є аккаунт</a></li>
+                <li><a href="#">Створити аккаунт</a></li>
+                <li><a href="#">Відновлення паролю</a></li>
+              </ul>
+            </li>
+            <li class="site-nav-item">
+              <a href="./portfolio.html" class="nav-link lng-menu-seven">Вакансії</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="">
+        <div class="captcha">  
+            <div class="">
+                <input type="hidden" name="captcha_sid" value="316905"/>
+                <input type="hidden" name="captcha_token" value="7a9efe429bfd1f69922b34fd24d33736"/>
+                <input type="hidden" name="captcha_response" value="Google no captcha"/>
+                <div class="g-recaptcha" data-sitekey="6LeNOJEUAAAAAJzgr37OmGmKP3bxwpi2kXjURQGg" data-theme="light" data-type="image"></div>
+            </div>
+            <button class="hero__button" type="button">
+              Зробити виклик
+              </button>
+        </div>
+    </section>
+    <!-- Подвал FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+          <div class="footer__logo-text">
+            <a href="./index.html" class="logo logo__footer">
+              <img class="logo__footer-img"  src="images/home/foot_logo.png" alt="">
+            </a>
+            <p class="footer-text">
+              Компанія «Експрес Мото Україна» є кур'єрською службою доставки документів, кореспонденції, пошти, вантажів для бізнесу по Україні та по Світу 
+            </p>
+            <p class="footer-text">
+              З 2017 року ТОВ "Експрес Мото Україна" входить в PAKLINE GROUP - 3PL- оператор з величезним досвідом з надання комплексу логістичних послуг
+            </p>
+          </div>
+          <div class="list footer__list-menu">
+            <ul class="list footer__list-moto">
+              <li class="footer__list-title">
+                <h3>Express Moto</h3>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-footer-about-company">Про компанію</a>
+              </li>
+              <li class="footer__list-item lng-menu-seven">
+                <a href="">Вакансії</a>
+              </li>
+              <li class="footer__list-item lng-footer-news-exmoto">
+                <a href="">Нове в EXPRESS MOTO</a>
+              </li>
+              <li class="footer__list-item lng-footer-official-info">
+                <a href="">Офіційна інформація</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-footer-agr-edo">Угода про ЕДО</a>
+              </li class="footer__list-item">  
+            </ul>
+            <ul class="list footer__list-service">
+              <li class="footer__list-title">
+                <h3 class="lng-menu-three">Послуги</h3>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-inter-deliv">Міжнародна доставка</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-ukr-deliv">Доставка по Україні</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-adress-send">Адресна розсилка</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-sort-assembly">Сортування та комплектування</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-resp-storage">Відповідальне зберігання</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-fulfill">Фулфілмент</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-add-service">Додаткові послуги</a>
+              </li>  
+            </ul>
+            <ul class="list footer__list-contacts">
+              <li class="footer__list-title">
+                <h3 class="lng-footer-service-centre">Центр обслуговування</h3>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-send-email">Надіслати лист</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-quest-answ">Запитання та відповіді</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-rules-proc">Правила та процедури</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="lng-our-contacts">Контакти</a>
+              </li> 
+            </ul>
+          </div>
+          <div class="footer__contacts-social">
+            <div class="item-tel">
+                <a href="tel:0800503503" class="contact-nav-link footer-phone"
+                  >0 <span>800</span> 503 503</a>
+            </div>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="#" class="footer-soc-link twitter_2">
+                  <svg class="footer-soc-icon">
+                    <use href="./images/icons_all.svg#icon-twitter_2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="#" class="footer-soc-link facebook_3">
+                  <svg class="footer-soc-icon">
+                    <use href="./images/icons_all.svg#icon-facebook_3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="#" class="footer-soc-link twitter_2">
+                  <svg class="footer-soc-icon">
+                    <use href="./images/icons_all.svg#icon-twitter_2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="#" class="footer-soc-link instagram_1">
+                  <svg class="footer-soc-icon">
+                    <use href="./images/icons_all.svg#icon-instagram_1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="#" class="footer-soc-link linkedin_4">
+                  <svg class="footer-soc-icon">
+                    <use href="./images/icons_all.svg#icon-linkedin_4"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="item-button">
+              <a href="#" class="button button-footer" type="submit">
+                <svg class="icon-right-footer" width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 12H5"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 6L23 12L17 18" 
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                <span class="lng-menu-six">Вхід</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- MOBILE MENU -->
+      <div class="menu-container js-menu-container hhh" id="mobile-menu">
+        <div class="menu-open">
+          <button class="menu-toggle menu-btn-close js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15">
+            <path
+              fill-rule="evenodd"
+              d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+  
+  <!-- ----выпадающие элементы меню на модалке при адаптивах---- -->
+        <ul class="mobile-menu menu-open list" id="mmAll-btn">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link current lng-menu-one" href="#">Відстежити</a>
+          </li>
+  
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link lng-menu-two" href="#">Виклик кур'єра</a>  
+          </li>
+          <li class="mobile-menu-item " >
+            <a class="mobile-menu-link link lng-menu-three" href="#" data-action="mm-one">Послуги</a>
+            <ul class="submenu-open list hiddens" id="mm-one">
+              <li><a href="#">STANDART</a></li>
+              <li><a href="#">EXPRESS</a></li>
+              <li><a href="#">SUPER EXPRESS</a></li>
+              <li><a href="#" class="lng-resp-storage">Відповідальне зберігання</a></li>
+              <li><a href="#" class="lng-sort-assembly">Сортування та комплектування</a></li>
+              <li><a href="#" class="lng-fulfill">Фулфілмент</a></li>
+              <li><a href="#" class="lng-dip-mail">Дипломатична пошта</a></li>
+            </ul>
+          </li>        
+          <li class="mobile-menu-item ">
+            <a class="mobile-menu-link link lng-menu-four" href="#" data-action="mm-two">Кур'єрська доставка</a>
+            <ul class="submenu-open list hiddens" id="mm-two">
+              <li><a href="#" class="lng-inter-deliv">Міжнародна доставка</a></li>
+              <li><a href="#" class="kiyv-deliv">Доставка по Києву</a></li>
+              <li><a href="#" class="lng-ukr-deliv">Доставка по Україні</a></li>
+              <li><a href="#" class="lng-adress-send">Адресна розсилка</a></li>
+              <li><a href="#" class="lng-add-service">Додаткові послуги</a></li>
+            </ul>
+          </li>
+  
+          <li class="mobile-menu-item ">
+            <a class="mobile-menu-link link lng-menu-five" href="#"  data-action="mm-three">Для клієнтів</a>
+            <ul class="submenu-open list hiddens" id="mm-three">
+              <li><a href="#" class="lng-send-email">Надіслати лист</a></li>
+              <li><a href="#" class="lng-paym-detail">Оплата за реквізитами</a></li>
+              <li><a href="#" class="lng-quest-answ">Запитання та відповіді</a></li>
+              <li><a href="#" class="lng-our-contacts">Контакти</a></li>
+              <li><a href="#" class="lng-rules-proc">Правила та процедури</a></li>
+              <li><a href="#" class="lng-private-room">Особистий кабінет</a></li>
+            </ul>
+          </li>
+  
+          <li class="mobile-menu-item ">
+            <a class="mobile-menu-link link lng-menu-six" href="#" data-action="mm-four">Вхід</a>
+            <ul class="submenu-open list hiddens" id="mm-four">
+              <li><a href="#">В мене є аккаунт</a></li>
+              <li><a href="#">Створити аккаунт</a></li>
+              <li><a href="#">Відновлення паролю</a></li>
+            </ul>
+          </li>
+  
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link lng-menu-seven" href="#">Вакансії</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+  
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./js/main.js"></script>
+    </body>
+  </html>
+  
