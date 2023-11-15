@@ -475,7 +475,7 @@ header {
 }
 
 
-    /* ---Бургер--- */
+    /* ---Бургер и MOBILE MENU--- */
 
 .menu-container {
     position: fixed;
@@ -568,18 +568,25 @@ header {
 
  /* ----выпадающие элементы меню на модалке при адаптивах----  */
 .submenu-open {
+    /* display: block; */
     max-width: 230px;
     transform-origin: 0 0;
     transition: .3s linear;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 .submenu-open a{
     text-decoration: none;
-    color: var(--title-text-color);
-    font-size: 14px;
+    color: var(--text-white-color);
+    font-size: 18px;
     display: block;
     /* border-bottom: 1px solid var(--phone-grey); */
-    padding: 5px 5px 5px 15px;
+    padding: 10px 10px 10px 15px;
     background-color: var(--accent-color);
+    line-height: 1.2;
+}
+.submenu-open a:hover{
+    color: var(--title-text-color);   
 }
 .hiddens {
     display: none;
