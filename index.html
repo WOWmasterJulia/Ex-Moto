@@ -72,9 +72,10 @@ xml              <li class="language-switcher-item ru">
               <div class="phone-burger">
                 <!-- Бургер -->
                 <button
-                  class="menu-toggle menu-btn-burger js-open-menu"
+                  class="menu-toggle menu-btn-burger"
                   aria-expanded="false"
                   aria-controls="mobile-menu"
+                  data-modal-open
                 >
                   <svg class="icon-icon-menu" width="32" height="22">
                     <use href="./images/icons_all.svg#icon-icon-menu"></use>
@@ -781,29 +782,28 @@ xml              <li class="language-switcher-item ru">
     </footer>
 
     <!-- MOBILE MENU -->
-    <div class="menu-container js-menu-container hhh" id="mobile-menu">
-      <div class="menu-open">
-        <button class="menu-toggle menu-btn-close js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-          width="15"
-          height="15">
-          <path
-            fill-rule="evenodd"
-            d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
+<div class="backdrop is-hidden" data-modal>
+  <!-- <div class="menu-container js-menu-container modal" id="mobile-menu"> -->
+  <div class="modal">
+      <button class="menu-toggle menu-btn-close" data-modal-close>
+          <svg
+            fill="currentColor"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15">
+            <path
+              fill-rule="evenodd"
+              d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
       </button>
-
-<!-- ----выпадающие элементы меню на модалке при адаптивах---- -->
+          <!-- ----выпадающие элементы меню на модалке при адаптивах---- -->
       <ul class="mobile-menu menu-open list" id="mmAll-btn">
         <li class="mobile-menu-item">
           <a class="mobile-menu-link link current lng-menu-one" href="#">Відстежити</a>
         </li>
-
         <li class="mobile-menu-item">
           <a class="mobile-menu-link link lng-menu-two" href="#">Виклик кур'єра</a>  
         </li>
@@ -855,8 +855,8 @@ xml              <li class="language-switcher-item ru">
           <a class="mobile-menu-link link lng-menu-seven" href="#">Вакансії</a>
         </li>
       </ul>
-      </div>
-    </div>
+  </div>
+</div>
 
     <script
       defer

@@ -216,9 +216,9 @@ const langArr = {
     }
 }
 
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
+  const mobileMenu = document.querySelector("[data-modal]");
+  const openMenuBtn = document.querySelector("[data-modal-open]");
+  const closeMenuBtn = document.querySelector("[data-modal-close]");
 
   const mmOneEl = document.querySelector('#mm-one');
   const mmTwoEl = document.querySelector('#mm-two');
@@ -239,7 +239,7 @@ const langArr = {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
+    mobileMenu.classList.toggle('is-hidden');
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
