@@ -1,0 +1,35 @@
+.wrapper-main {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.field-items {
+    padding-right: 25px;
+}
+.rtejustify {
+text-align: justify;
+}
+.view-content {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 133px 133px 133px 133px 133px;
+}
+.card-item {
+    border: 1px solid #374a59;
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 15px;
+    color: #374a59;
+    display: block;
+    line-height: 1;
+    text-decoration: none;
+}
+.img-responsive {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,14 @@
+.container-form-call {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-call-courier {
+    width: 350px;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+}
