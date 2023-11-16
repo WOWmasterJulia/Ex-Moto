@@ -443,8 +443,7 @@ header {
 }
 @media screen and (max-width: 490px){
     .input__number{
-        padding-left: 15px;
-        
+        padding-left: 15px;        
         max-width: 150px;
     }
     .input__number::placeholder{
@@ -453,7 +452,7 @@ header {
     }
 
 }
-@media screen and (max-width: 445px){
+@media screen and (max-width: 455px){
     .number{
         justify-content: flex-end;
     }
@@ -813,16 +812,17 @@ header {
         height: 3px;
 }
 }
-@media screen and (max-width: 400px){
-    .hero__title {
-        font-size: 16px;
-}
+@media screen and (max-width: 455px){
+    /* .hero__title {
+        font-size: 16px; */
+/* } */
     .hero__text {
         font-size: 12px;
         padding-bottom: 15px;
 }
     .hero__button{
-        font-size: 11px;
+        font-size: 12px;
+        padding: 10px 10px;
 }
 }
 
@@ -1102,16 +1102,17 @@ header {
 }
 @media screen and (max-width: 450px){
     .feedback-section{
-    padding-top: 40px;
-    padding-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+}
+    .button-feedback{
+        font-size: 12px;
+        padding: 10px 10px;
 }
 }
 @media screen and (max-width: 400px){
     .feedback_title {
-        font-size: 16px;
-}
-    .button-feedback{
-        font-size: 11px;
+        /* font-size: 16px; */
 }
 }
 
@@ -1259,7 +1260,7 @@ header {
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 777px){
     .footer__logo-text {
     width: 60%;
     padding: 0 20px 20px 20px;
@@ -1301,5 +1302,11 @@ header {
 @media screen and (max-width: 500px){
     .footer-phone{
         font-size: 23px;
+    }
+}
+@media screen and (max-width: 455px){
+    .button-footer{
+        font-size: 12px;
+        padding: 10px 10px;
     }
 }
