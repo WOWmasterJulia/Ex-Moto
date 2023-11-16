@@ -215,24 +215,12 @@ const langArr = {
       "ru" : "Соглашения о ЭДО",
     }
 }
-
-  const mobileMenu = document.querySelector("[data-modal]");
-  const openMenuBtn = document.querySelector("[data-modal-open]");
-  const closeMenuBtn = document.querySelector("[data-modal-close]");
-
-  const mmOneEl = document.querySelector('#mm-one');
-  const mmTwoEl = document.querySelector('#mm-two');
-  const mmThreeEl = document.querySelector('#mm-three');
-  const mmFourEl = document.querySelector('#mm-four');
-  const mmAllBtnEl = document.querySelector('#mmAll-btn');
-
-  const hiddensMenuItems = () => {
-    mmOneEl.classList.add('hiddens');
-    mmTwoEl.classList.add('hiddens');
-    mmThreeEl.classList.add('hiddens');
-    mmFourEl.classList.add('hiddens');
-  };
+  
 // ------------------------ mobile menu ------------------
+const mobileMenu = document.querySelector("[data-modal]");
+const openMenuBtn = document.querySelector("[data-modal-open]");
+const closeMenuBtn = document.querySelector("[data-modal-close]");
+
   const toggleMenu = () => {
     changeLanguageText(lang);
     hiddensMenuItems();
@@ -257,10 +245,21 @@ const langArr = {
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
-
+// +++++++++++ работа с пунктами мобильного меню (скрыть/показать) +++++++++++//
+  const mmOneEl = document.querySelector('#mm-one');
+  const mmTwoEl = document.querySelector('#mm-two');
+  const mmThreeEl = document.querySelector('#mm-three');
+  const mmFourEl = document.querySelector('#mm-four');
+  const mmAllBtnEl = document.querySelector('#mmAll-btn');
+  const hiddensMenuItems = () => {
+    mmOneEl.classList.add('hiddens');
+    mmTwoEl.classList.add('hiddens');
+    mmThreeEl.classList.add('hiddens');
+    mmFourEl.classList.add('hiddens');
+  };
   mmAllBtnEl.addEventListener('click', (evt) => {
     hiddensMenuItems();
-   
+// ++++++++++ работа с языками укр/рус ++++++++++++++
    const tt = evt.target.dataset.action;
      if (tt) {
      const xx = document.querySelector(`#${tt}`);
