@@ -28,8 +28,21 @@ text-align: justify;
     line-height: 1;
     text-decoration: none;
 }
+.card-item:hover {
+    background-color: var(--accent-color);
+}
 .img-responsive {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
+}
+
+.active {
+    background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 793px) {   
+    .view-content {
+        grid-template-columns: 1fr;
+    }
 }
