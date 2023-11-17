@@ -1,13 +1,14 @@
 .wrapper-main {
     display: flex;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* flex-wrap: wrap; */
 
 }
 .field-items {
-    padding-right: 25px;
+    padding-right: 15px;
 }
 .rtejustify {
 text-align: justify;
@@ -40,9 +41,33 @@ text-align: justify;
 .active {
     background-color: var(--accent-color);
 }
-
+@media screen and (max-width: 980px) {
+    .col-sm-9{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 793px) {   
     .view-content {
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 787px) {
+    .col-sm-9{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .col-sm-9{
+        font-size: 12px;
+    }
+    .card-item {
+    padding: 10px 10px;
+    font-size: 12px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .card-item {
+    padding: 5px 5px;
+    font-size: 11px;
     }
 }
