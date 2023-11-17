@@ -89,3 +89,9 @@ text-align: justify;
         grid-template-columns: 1fr;
     }
 }
+@media screen and (max-width: 430px){   
+    .wrapper-main{
+        font-size: 11px;
+        flex-direction: column;
+    }
+}
