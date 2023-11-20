@@ -98,6 +98,13 @@ text-align: justify;
         font-size: 11px;
         flex-direction: column;
     }
+    .field-items {
+        padding-right: 0px;
+    }
+    .view-content {
+        padding-top: 25px;
+        
+    }
 }
  @media screen and (max-width: 787px) {
     .col-sm-9{
