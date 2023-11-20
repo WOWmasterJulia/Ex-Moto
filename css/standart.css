@@ -30,7 +30,6 @@
     padding-right: 25px;
     padding-top: 0px;
     padding-bottom: 30px;
-
 }
 .page-header {
     display: flex;
@@ -44,7 +43,7 @@
     border-right: 5px solid #76b703;
 }
 .field-items {
-    padding-right: 25px;
+    padding-right: 15px;
 }
 .rtejustify {
 text-align: justify;
@@ -83,15 +82,44 @@ text-align: justify;
 .active {
     background-color: var(--accent-color);
 }
-
+@media screen and (max-width: 980px) {
+    .col-sm-9{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 793px) {   
     .view-content {
         grid-template-columns: 1fr;
     }
 }
+
 @media screen and (max-width: 430px){   
     .wrapper-main{
         font-size: 11px;
         flex-direction: column;
+
+/* @media screen and (max-width: 787px) {
+    .col-sm-9{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .col-sm-9{
+        font-size: 12px;
+    }
+    .card-item {
+    padding: 10px 10px;
+    font-size: 12px;
+    }
+    .page-header>.icon {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 3px solid var(--accent-color);
+}
+}
+@media screen and (max-width: 360px) {
+    .card-item {
+    padding: 5px 5px;
+    font-size: 11px; */
     }
 }
