@@ -22,17 +22,17 @@ const swiperOne = new Swiper(".main-swiper", {
     },
   });
   
-  const swiperThree = new Swiper(".main-swiper1", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
+  // const swiperThree = new Swiper(".main-swiper1", {
+  //   spaceBetween: 30,
+  //   centeredSlides: true,
+  //   autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //   },
+  // });
 // -------------- language switcher ---------------------- //
 const selectLangEl = document.querySelector('.language-switcher');
 
